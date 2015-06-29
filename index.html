@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body ng-app>
+<div class='well' ng-init="teams = [
+  {name:'Dodgers', division: 'NL West'},
+  {name:'Giants', division: 'NL West'},
+  {name:'Diamondbacks', division: 'NL West'},
+  {name:'Rockies', division: 'NL West'},
+  {name:'Padres', division: 'NL West' }
+]">Angular Baseball Stats</div>
+  <div class="row">
+  <div class="col-md-2">NL West</div>
+  <ul>
+  	<li ng-repeat="team in teams">{{team.name}}</li>
+  </ul>
+  <div class="col-md-2">NL Central</div>
+  <div class="col-md-2">NL East</div>
+  <div class="col-md-2">AL West</div>
+  <div class="col-md-2">AL Central</div>
+  <div class="col-md-2">AL East</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.js"></script>
+</body>
+</html>
