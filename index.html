@@ -6,14 +6,28 @@
   {name:'Giants', division: 'NL West'},
   {name:'Diamondbacks', division: 'NL West'},
   {name:'Rockies', division: 'NL West'},
-  {name:'Padres', division: 'NL West' }
+  {name:'Padres', division: 'NL West' },
+  {name: 'Cardinals', division: 'NL Central'}
 ]">Angular Baseball Stats</div>
   <div class="row">
-  <div class="col-md-2">NL West</div>
-  <ul>
-  	<li ng-repeat="team in teams">{{team.name}}</li>
-  </ul>
-  <div class="col-md-2">NL Central</div>
+  <div class="col-md-2">
+    <div class="table-responsive">
+  <table class="table">
+    <th>NL West</th>
+    <tr ng-repeat="team in teams | filter: 'NL West' ">
+    <td >{{team.name}}</td>
+  </tr>
+  </table>
+</div></div>
+  
+  <div class="col-md-2"> <div class="table-responsive">
+  <table class="table">
+    <th>NL West</th>
+    <tr ng-repeat="team in teams | filter: 'NL Central' ">
+    <td >{{team.name}}</td>
+  </tr>
+  </table>
+</div></div>
   <div class="col-md-2">NL East</div>
   <div class="col-md-2">AL West</div>
   <div class="col-md-2">AL Central</div>
