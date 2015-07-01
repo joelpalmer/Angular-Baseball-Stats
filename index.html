@@ -1,38 +1,11 @@
-<html>
-<head><title>Angular Baseball Stats</title></head>
-<body ng-app>
-<div class='well' ng-init="teams = [
-  {name:'Dodgers', division: 'NL West'},
-  {name:'Giants', division: 'NL West'},
-  {name:'Diamondbacks', division: 'NL West'},
-  {name:'Rockies', division: 'NL West'},
-  {name:'Padres', division: 'NL West' },
-  {name: 'Cardinals', division: 'NL Central'},
-  {name: 'Cubs', division: 'NL Central'},
-  {name: 'Reds', division: 'NL Central'},
-  {name: 'Brewers', division: 'NL Central'},
-  {name: 'Pirates', division: 'NL Central'},
-  {name: 'Nationals', division: 'NL East'},
-  {name: 'Braves', division: 'NL East'},
-  {name: 'Mets', division: 'NL East'},
-  {name: 'Marlins', division: 'NL East'},
-  {name: 'Phillies', division: 'NL East'},
-  {name: 'Astros', division: 'AL West'},
-  {name: 'Mariners', division: 'AL West'},
-  {name: 'Rangers', division: 'AL West'},
-  {name: 'Angels', division: 'AL West'},
-  {name: 'Athletics', division: 'AL West'},
-  {name: 'Indians', division: 'AL Central'},
-  {name: 'White Sox', division: 'AL Central'},
-  {name: 'Royals', division: 'AL Central'},
-  {name: 'Twins', division: 'AL Central'},
-  {name: 'Tigers', division: 'AL Central'},
-  {name: 'Orioles', division: 'AL East'},
-  {name: 'Red Sox', division: 'AL East'},
-  {name: 'Yankees', division: 'AL East'},
-  {name: 'Rays', division: 'AL East'},
-  {name: 'Blue Jays', division: 'AL East'}
-]"><h2>Angular Baseball Stats</h2></div>
+<html ng-app="baseballStatsApp">
+<head><title>Angular Baseball Stats</title>
+
+</head>
+
+<body ng-controller="TeamsCtrl">
+  <div>
+<div class='well'><h2>Angular Baseball Stats</h2></div>
   <div class="row">
   <div class="col-md-2">
     <div class="table-responsive">
@@ -85,6 +58,7 @@
   </table>
 </div>
 </div>
+</div></div>
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -95,5 +69,6 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.js"></script>
+<script type="text/javascript" src='controllers/teamsCtrl.js'></script>
 </body>
 </html>

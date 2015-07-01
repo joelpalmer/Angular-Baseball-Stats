@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        jshint: ['Gruntfile.js'],
+        jshint: ['controllers/teamsCtrl.js'],
 
         less: {
             compile: {
